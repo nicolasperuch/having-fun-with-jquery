@@ -27,13 +27,17 @@
 			<div class="inputDiv">
 			
 				<form>
-					<input id="textField" type="text" class="textField" placeholder="Insert your id">
+					<select name="filter">
+						<option value="id">Id</option> 
+					  	<option value="title">Titulo</option>
+					  	<option value="body">Corpo</option>
+					</select>
+					<input id="textField" name="filter" type="text" class="textField" placeholder="Insert your id">
 				</form>
 				
 			</div>
 			<div class="btnDiv">
 				<button id="searchButton" type="button" class="searchButton">Search</button>
-				<button id="searchButtonAll" type="button" class="searchButton">Search All</button>
 			</div>
 			<div class="detailBox">
 				<table class="detailTable">
