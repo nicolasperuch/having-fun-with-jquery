@@ -5,8 +5,6 @@ $('#searchButton').on('click', function (){
 
     let form = $( "form" ).serialize();
     console.log(form)
-
-    
     
 	search(filter, textField)
 })
