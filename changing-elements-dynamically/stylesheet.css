@@ -1,0 +1,30 @@
+.parent{
+    background-color: aliceblue; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.selectDiv{
+    width: 100%;
+    height: 4%;
+    background-color: rebeccapurple;
+}
+
+.dynamicFields{
+    width: 100%;
+    height: 4%;
+    background-color: yellow;
+}
+
+.textFieldDiv{
+    width: 100%;
+    height: 5%;
+    display: none;
+}
+
+.dropdownDiv{
+    width: 100%;
+    height: 5%;
+    display: none;
+}

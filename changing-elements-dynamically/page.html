@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>
+            Changing elements dynamically
+        </title>
+    </head>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <body>
+
+        <div class="parent">
+                    
+            <div class="selectDiv">
+                <select id="dropdownBranch">
+                    <option value="blank"></option>
+                    <option value="brasil">Brasil</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div class="dynamicFields">
+                <div class="textFieldDiv">
+
+                    <label for="state">Estado</label>
+                    <input id="txtState" type="text" class="textField" placeholder="Insert your state">
+                    <label for="city">Cidade</label>
+                    <input id="txtCity" type="text" class="textField" placeholder="Insert your city">
+            
+                </div>    
+
+                <div class="dropdownDiv">
+                    <label for="state">Estado</label>
+                    <select id="dropdownState">
+                        <option value="blank"></option>
+                        <option value="RS">RS</option>
+                        <option value="SC">SC</option>
+                    </select>    
+                    
+                    <label for="city">Cidade</label>
+                    <select id="dropdownCity">
+                        <option value="blank"></option>   
+                        <option value="canoas">Canoas</option>
+                        <option value="poa">POA</option>
+                    </select>    
+
+                </div>            
+            </div>
+        </div>
+        <script src="jsfile.js"></script>        
+    </body>
+</html>
