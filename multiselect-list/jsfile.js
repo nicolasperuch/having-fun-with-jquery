@@ -1,19 +1,13 @@
-$("#branch").change(function (){
-	
-	if(!checkSelectedItem("brazil"))
-		adjustFields(true, false);
-	else if(!checkSelectedItem("notBrazil"))
-		adjustFields(false, true);
-	else
-		adjustFields(false, false);
+$("#branchChoicesForm").change(function (){
+	const isUndefined = $("input:checked").val() == undefined ? true : false;
+	const isBrazil = $("input:checked").val() == "brazil" ? true : false;
+
+	if(isUndefined){
+		$(this).find('input').prop('disabled', false);
+	} else if (isBrazil) {
+		$(this).find('input:not([value="brazil"])').prop('disabled', true);
+	} else {
+		$(this).find('input[value="brazil"]').prop('disabled', true);
+	}
+
 });
-
-function checkSelectedItem(branch){
-	var selectedItem = $("#branch option:selected").prop("class");
-	return selectedItem == branch || selectedItem == null ? true : false;
-};
-
-function adjustFields(brazilStatus, notBrazilStatus){
-	$(".brazil").prop("disabled", brazilStatus)
-	$(".notBrazil").prop("disabled", notBrazilStatus)
-}

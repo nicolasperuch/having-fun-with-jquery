@@ -18,14 +18,34 @@
 
 
 	<body>
-		<div>
-			<select id="branch" multiple>
-		        <option class="brazil" value="brasil">Brasil</option>
-		        <option class="notBrazil" value="mexico">Mexico</option>
-		        <option class="notBrazil" value="argentina">Argentina</option>
-		        <option class="notBrazil" value="latam">LATAM</option>
-			</select>
-		</div>
+		 <div>
+            <div class="panel-body" style="text-align: center">
+                <a class="btn btn-primary" data-toggle="collapse" href="#branchCollapse">
+  				    Selecione o branch
+  			    </a>
+            </div>
+            <div class="collapse multi-collapse" id="branchCollapse">
+		        <div class="panel-body">   
+                    <div style="text-align: center"> 
+	                    <form id="branchChoicesForm">
+			      	        <label>Brasil</label>
+			      	        <input name="branchChoices" value="brazil" type="checkbox">
+				            <label>Argentina</label>
+			      	        <input name="branchChoices" value="argentina" type="checkbox">
+				            <label>Mexico</label>
+			      	        <input name="branchChoices" value="mexico" type="checkbox">
+				            <label>LATAM</label>
+			      	        <input name="branchChoices" value="latam" type="checkbox">
+                        </form>
+                    </div>
+                    <div class="panel-body">
+                        <div style="text-align: center; margin-top: 5px">
+                            <button type="button" id="btnSearch" class="btn btn-primary">Go!</button>
+                        </div>                        
+                    </div>
+		  	    </div>
+		    </div>
+        </div>      
 
 		<script src="jsfile.js"></script>
 	</body>
